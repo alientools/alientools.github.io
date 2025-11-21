@@ -1,44 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>alientools — Página inicial</title>
-  <style>
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f7fafc;color:#0f172a}
-    .card{max-width:820px;padding:28px;border-radius:12px;background:#fff;box-shadow:0 8px 30px rgba(2,6,23,0.06);}
-    h1{margin:0 0 8px;font-size:22px}
-    p{margin:0 0 12px;color:#475569}
-    a.button{display:inline-block;padding:10px 14px;border-radius:8px;background:#0ea5a4;color:white;text-decoration:none;font-weight:600}
-    .meta{margin-top:14px;font-size:13px;color:#94a3b8}
-    img.logo{max-width:120px;margin-right:18px;border-radius:8px}
-    .row{display:flex;align-items:center}
-    pre{background:#0f172a;color:#e6eef6;padding:12px;border-radius:8px;overflow:auto}
-  </style>
-</head>
-<body>
-  <div class="card">
-    <div class="row">
-      <img class="logo" src="/mnt/data/a67dd54f-a82d-4840-974e-f7a609cc2499.png" alt="logo">
-      <div>
-        <h1>Bem-vindo — alientools</h1>
-        <p>Este repositório está configurado como GitHub Pages. O arquivo <code>app-ads.txt</code> deve ficar na raiz para ser acessado pelo Google.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>alientools — app-ads.txt</title>
+    <meta name="description" content="Repositório oficial para hospedagem do app-ads.txt exigido pelo Google Play." />
+
+    <!-- Open Graph (opcional, mas deixa bonito quando compartilha) -->
+    <meta property="og:title" content="alientools — app-ads.txt" />
+    <meta property="og:description" content="Arquivo app-ads.txt válido para monetização no Google Play." />
+    <meta property="og:type" content="website" />
+
+    <style>
+      :root {
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --text: #1e293b;
+        --text-light: #64748b;
+        --accent: #0d9488;
+        --border: #e2e8f0;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f172a;
+          --card: #1e293b;
+          --text: #f1f5f9;
+          --text-light: #94a3b8;
+          --border: #334155;
+        }
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 480px;
+        width: 90%;
+        padding: 2rem;
+        background: var(--card);
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        border: 1px solid var(--border);
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: 1.75rem;
+        color: var(--accent);
+      }
+
+      p {
+        margin: 0 0 1.5rem;
+        color: var(--text-light);
+        font-size: 1rem;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--accent);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.2s;
+      }
+
+      .btn:hover {
+        background: #0d766e;
+        transform: translateY(-2px);
+      }
+
+      .note {
+        margin-top: 2rem;
+        font-size: 0.875rem;
+        color: var(--text-light);
+      }
+
+      .icon {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Ícone simples usando emoji ou SVG inline (sem arquivo externo) -->
+      <div class="icon">🛠️</div>
+
+      <h1>alientools</h1>
+      <p>Este repositório existe apenas para hospedar o arquivo <strong>app-ads.txt</strong> exigido pelo Google Play.</p>
+
+      <a href="/app-ads.txt" class="btn">Ver app-ads.txt →</a>
+
+      <div class="note">
+        <p><strong>Dica:</strong> O arquivo está na raiz do repositório e é acessado automaticamente em:<br>
+        <code>https://alientools.github.io/app-ads.txt</code></p>
       </div>
     </div>
-
-    <hr style="margin:16px 0;border:none;border-top:1px solid #eef2f7">
-
-    <p><strong>Links úteis:</strong></p>
-    <ul>
-      <li><a class="button" href="/app-ads.txt">Ver app-ads.txt</a></li>
-      <li style="margin-top:8px"><a href="https://alientools.github.io" target="_blank">Abrir site (github.io)</a></li>
-    </ul>
-
-    <div class="meta">
-      <p>Se preferir, edite o arquivo <code>index.html</code> e o <code>app-ads.txt</code> diretamente no repositório.</p>
-      <p>OBS: a imagem usada está referenciada localmente como:</p>
-      <pre>/mnt/data/a67dd54f-a82d-4840-974e-f7a609cc2499.png</pre>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
